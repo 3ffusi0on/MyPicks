@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/champion_table_row"
+  >
+
+  <ImageView
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:id="@+id/imageView2"
+    android:src="@drawable/vayne"
+    android:layout_margin="2dp"
+    />
+  <ImageView
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:id="@+id/imageView3"
+    android:src="@drawable/thresh"
+    android:layout_margin="2dp"
+    />
+  <ImageView
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:id="@+id/imageView5"
+    android:src="@drawable/vayne"
+    android:layout_margin="2dp"
+    />
+  <ImageView
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:id="@+id/imageView4"
+    android:src="@drawable/thresh"
+    android:layout_margin="2dp"
+    />
+  <ImageView
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:id="@+id/imageView6"
+    android:src="@drawable/vayne"
+    android:layout_margin="2dp"
+    />
+</LinearLayout>
