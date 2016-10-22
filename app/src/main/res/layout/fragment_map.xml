@@ -2,16 +2,63 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context="com.mypicks.MapFragment"
+             tools:context=".views.main.MapFragment"
              android:gravity="center_vertical|center_horizontal"
              android:background="@color/primary_material_light" >
 
   <ImageView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:id="@+id/imageView"
+    android:id="@+id/imageMap"
     android:layout_gravity="center"
     android:src="@drawable/map"
-    android:onClick="mapClick"
+    android:onClick="mapClickJungle"
+    />
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Top"
+    android:id="@+id/topBt"
+    android:layout_below="@+id/imageMap"
+    android:layout_alignStart="@+id/imageMap"
+    android:onClick="mapClickTopLane"
+    />
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Mid"
+    android:id="@+id/midBt"
+    android:layout_below="@+id/imageMap"
+    android:layout_toEndOf="@+id/topBt"
+    android:onClick="mapClickMidLane"
+    />
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Supp"
+    android:id="@+id/suppBt"
+    android:layout_below="@+id/topBt"
+    android:layout_alignStart="@+id/topBt"
+    android:onClick="mapClickSupport"
+    />
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Adc"
+    android:id="@+id/marksmanBt"
+    android:layout_below="@+id/topBt"
+    android:layout_toEndOf="@+id/topBt"
+    android:onClick="mapClickMarksman"
+    />
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Ban"
+    android:id="@+id/banBt"
+    android:layout_below="@+id/imageMap"
+    android:layout_alignBottom="@+id/marksmanBt"
+    android:layout_alignEnd="@+id/imageMap"
+    android:layout_toEndOf="@+id/midBt"
+    android:onClick="mapClickBan"
     />
 </RelativeLayout>

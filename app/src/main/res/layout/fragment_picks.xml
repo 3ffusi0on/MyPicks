@@ -3,7 +3,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 xmlns:fab="http://schemas.android.com/apk/res-auto"
-                tools:context="com.mypicks.PicksFragment"
+                tools:context=".views.main.PicksFragment"
                 android:background="@color/primary_material_light"
   >
 
@@ -24,7 +24,7 @@
     android:layout_marginEnd="@dimen/fab_margin"
     android:layout_marginBottom="@dimen/fab_margin"
     fab:type="DEFAULT"
-    fab:button_color="@color/fab_material_lime_500"
+    fab:button_color="@android:color/darker_gray"
     fab:button_colorPressed="@color/fab_material_lime_900"
     fab:image="@drawable/fab_plus_icon"
     fab:image_size="24dp"
@@ -39,5 +39,6 @@
     fab:shadowResponsiveEffect_enabled="true"
     fab:show_animation="@anim/fab_roll_from_down"
     fab:hide_animation="@anim/fab_roll_to_down"
+    android:onClick="displayChampionListFragment"
     />
 </RelativeLayout>

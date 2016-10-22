@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<FrameLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context="com.mypicks.MainActivity"
-  android:id="@+id/main_container"
-  >
+  android:id="@+id/main_container" >
 
-  <fragment
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:name="com.mypicks.MapFragment"
-    android:id="@+id/fragment"
-    android:layout_alignParentTop="true"
-    android:layout_centerHorizontal="true"
-    tools:layout="@layout/fragment_map"
-    />
-</RelativeLayout>
+</FrameLayout>

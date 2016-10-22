@@ -1,3 +1,30 @@
+<com.daimajia.swipe.SwipeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="?android:attr/listPreferredItemHeight"
+  android:id="@+id/swipe_layout"
+  >
+
+  <LinearLayout
+    android:background="#464343"
+    android:id="@+id/swipe_wrapper"
+    android:layout_width="wrap_content"
+    android:weightSum="1"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+    <ImageView
+      android:id="@+id/delete_champBt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:adjustViewBounds="true"
+      android:background="@android:drawable/ic_delete"
+      android:onClick="picksDeleteChamp"
+      />
+
+  </LinearLayout>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
                 android:layout_height="?android:attr/listPreferredItemHeight"
@@ -10,32 +37,31 @@
     android:layout_alignParentBottom="true"
     android:layout_alignParentTop="true"
     android:layout_marginEnd="6dip"
-    android:contentDescription="TODO"
     android:src="@android:drawable/ic_lock_idle_alarm" />
-
-  <TextView
-    android:id="@+id/champion_title"
-    android:layout_width="fill_parent"
-    android:layout_height="26dip"
-    android:layout_alignParentBottom="true"
-    android:layout_alignParentEnd="true"
-    android:layout_toEndOf="@id/champion_icon"
-    android:ellipsize="marquee"
-    android:singleLine="true"
-    android:text="Description"
-    android:textSize="12sp" />
 
   <TextView
     android:id="@+id/champion_name"
     android:layout_width="fill_parent"
-    android:layout_height="match_parent"
-    android:layout_above="@id/champion_title"
+    android:layout_height="wrap_content"
     android:layout_alignParentEnd="true"
     android:layout_alignParentTop="true"
     android:layout_alignWithParentIfMissing="false"
     android:layout_toEndOf="@id/champion_icon"
     android:gravity="center_vertical"
-    android:text="Example application"
     android:textSize="16sp" />
+  <TextView
+    android:id="@+id/champion_title"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/champion_name"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_toEndOf="@id/champion_icon"
+    android:ellipsize="marquee"
+    android:singleLine="true"
+    android:textSize="12sp"
+    android:layout_alignParentTop="false"
+    />
 
-</RelativeLayout> 
+</RelativeLayout>
+</com.daimajia.swipe.SwipeLayout>
