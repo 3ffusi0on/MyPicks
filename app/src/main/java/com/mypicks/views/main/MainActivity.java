@@ -111,8 +111,10 @@ public class MainActivity extends AppCompatActivity {
     call.enqueue(new Callback<ChampionListDto>() {
       @Override
       public void onResponse(Response<ChampionListDto> response, Retrofit retrofit) {
-        ArrayList<ChampionDto> mChampionArrayList
-            = new ArrayList<>(response.body().getData().values());
+        if (response.body().getData() == null)
+          return;
+
+        ArrayList<ChampionDto> mChampionArrayList = new ArrayList<>(response.body().getData().values());
 
         // Get singleton instance of database
         MyPicksDatabaseHelper databaseHelper = MyPicksDatabaseHelper.getInstance(getApplicationContext());
